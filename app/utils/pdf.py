@@ -27,3 +27,5 @@ class OnboardingPDFGenerator:
             
         logger.info(f"Dossier PDF saved to: {file_path}")
         return file_path
+
+# PDF dossier rendering properties
