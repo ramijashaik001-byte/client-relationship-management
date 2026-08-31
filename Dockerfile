@@ -8,8 +8,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-EXPOSE 8000
+EXPOSE 8007
 
 CMD ["python", "run.py"]
-
-# Exposed application port config

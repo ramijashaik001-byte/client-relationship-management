@@ -32,7 +32,7 @@ The project features a clean architecture split into standard REST routers, busi
    ```bash
    python run.py
    ```
-   Open [http://localhost:8000/docs](http://localhost:8000/docs) in your browser to view the interactive Swagger OpenAPI docs.
+   Open [http://localhost:8007/docs](http://localhost:8007/docs) in your browser to view the interactive Swagger OpenAPI docs.
 
 3. **Running the Test Suite**:
    ```bash
@@ -41,5 +41,3 @@ The project features a clean architecture split into standard REST routers, busi
 
 ## Scale Metric
 Total generated lines of code: **64066** lines of clean, structured python!
-
-<!-- CRM Client Onboarding build information updated -->

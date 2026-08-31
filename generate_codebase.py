@@ -1530,7 +1530,7 @@ run_content = """# run.py
 import uvicorn
 
 if __name__ == "__main__":
-    uvicorn.run("app.main:app", host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run("app.main:app", host="0.0.0.0", port=8007, reload=True)
 """
 with open("run.py", "w") as f:
     f.write(run_content)
@@ -1566,7 +1566,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-EXPOSE 8000
+EXPOSE 8007
 
 CMD ["python", "run.py"]
 """
@@ -1627,7 +1627,7 @@ The project features a clean architecture split into standard REST routers, busi
    ```bash
    python run.py
    ```
-   Open [http://localhost:8000/docs](http://localhost:8000/docs) in your browser to view the interactive Swagger OpenAPI docs.
+   Open [http://localhost:8007/docs](http://localhost:8007/docs) in your browser to view the interactive Swagger OpenAPI docs.
 
 3. **Running the Test Suite**:
    ```bash
