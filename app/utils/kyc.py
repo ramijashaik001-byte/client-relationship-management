@@ -46,3 +46,8 @@ class KYCProvider:
         }
 
 # KYC remote verification retry protocol placeholder
+
+    @staticmethod
+    def get_retry_threshold() -> int:
+        """Returns the maximum retry threshold for KYC verification calls."""
+        return 3
