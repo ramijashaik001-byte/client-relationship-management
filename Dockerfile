@@ -11,3 +11,5 @@ COPY . .
 EXPOSE 8000
 
 CMD ["python", "run.py"]
+
+# Exposed application port config
