@@ -10,9 +10,6 @@ class UserPermission(Base):
     Represents a specific element in the Client Onboarding CRM system.
     """
     __tablename__ = "user_permissions"
-    __table_args__ = (
-        Index("ix_user_permissions_id", "id"),
-    )
 
     id = Column(Integer, primary_key=True, index=True)
     role_name = Column(String(100), nullable=False)

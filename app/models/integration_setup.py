@@ -10,9 +10,6 @@ class IntegrationSetup(Base):
     Represents a specific element in the Client Onboarding CRM system.
     """
     __tablename__ = "integration_setups"
-    __table_args__ = (
-        Index("ix_integration_setups_id", "id"),
-    )
 
     id = Column(Integer, primary_key=True, index=True)
     system_name = Column(String(100), unique=True, nullable=False)

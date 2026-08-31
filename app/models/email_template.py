@@ -10,9 +10,6 @@ class EmailTemplate(Base):
     Represents a specific element in the Client Onboarding CRM system.
     """
     __tablename__ = "email_templates"
-    __table_args__ = (
-        Index("ix_email_templates_id", "id"),
-    )
 
     id = Column(Integer, primary_key=True, index=True)
     template_name = Column(String(100), unique=True, nullable=False)

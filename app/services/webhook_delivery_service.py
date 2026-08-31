@@ -120,7 +120,7 @@ class WebhookDeliveryService:
         logger.info(f'Running business rule verification checkpoint 1 for WebhookDelivery entity {entity_id}')
         obj = db.query(WebhookDelivery).filter(WebhookDelivery.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('WebhookDelivery', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -144,7 +144,7 @@ class WebhookDeliveryService:
         logger.info(f'Running business rule verification checkpoint 2 for WebhookDelivery entity {entity_id}')
         obj = db.query(WebhookDelivery).filter(WebhookDelivery.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('WebhookDelivery', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -168,7 +168,7 @@ class WebhookDeliveryService:
         logger.info(f'Running business rule verification checkpoint 3 for WebhookDelivery entity {entity_id}')
         obj = db.query(WebhookDelivery).filter(WebhookDelivery.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('WebhookDelivery', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -192,7 +192,7 @@ class WebhookDeliveryService:
         logger.info(f'Running business rule verification checkpoint 4 for WebhookDelivery entity {entity_id}')
         obj = db.query(WebhookDelivery).filter(WebhookDelivery.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('WebhookDelivery', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -216,7 +216,7 @@ class WebhookDeliveryService:
         logger.info(f'Running business rule verification checkpoint 5 for WebhookDelivery entity {entity_id}')
         obj = db.query(WebhookDelivery).filter(WebhookDelivery.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('WebhookDelivery', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -240,7 +240,7 @@ class WebhookDeliveryService:
         logger.info(f'Running business rule verification checkpoint 6 for WebhookDelivery entity {entity_id}')
         obj = db.query(WebhookDelivery).filter(WebhookDelivery.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('WebhookDelivery', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -264,7 +264,7 @@ class WebhookDeliveryService:
         logger.info(f'Running business rule verification checkpoint 7 for WebhookDelivery entity {entity_id}')
         obj = db.query(WebhookDelivery).filter(WebhookDelivery.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('WebhookDelivery', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -288,7 +288,7 @@ class WebhookDeliveryService:
         logger.info(f'Running business rule verification checkpoint 8 for WebhookDelivery entity {entity_id}')
         obj = db.query(WebhookDelivery).filter(WebhookDelivery.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('WebhookDelivery', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -312,7 +312,7 @@ class WebhookDeliveryService:
         logger.info(f'Running business rule verification checkpoint 9 for WebhookDelivery entity {entity_id}')
         obj = db.query(WebhookDelivery).filter(WebhookDelivery.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('WebhookDelivery', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -336,7 +336,7 @@ class WebhookDeliveryService:
         logger.info(f'Running business rule verification checkpoint 10 for WebhookDelivery entity {entity_id}')
         obj = db.query(WebhookDelivery).filter(WebhookDelivery.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('WebhookDelivery', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -360,7 +360,7 @@ class WebhookDeliveryService:
         logger.info(f'Running business rule verification checkpoint 11 for WebhookDelivery entity {entity_id}')
         obj = db.query(WebhookDelivery).filter(WebhookDelivery.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('WebhookDelivery', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -384,7 +384,7 @@ class WebhookDeliveryService:
         logger.info(f'Running business rule verification checkpoint 12 for WebhookDelivery entity {entity_id}')
         obj = db.query(WebhookDelivery).filter(WebhookDelivery.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('WebhookDelivery', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -408,7 +408,7 @@ class WebhookDeliveryService:
         logger.info(f'Running business rule verification checkpoint 13 for WebhookDelivery entity {entity_id}')
         obj = db.query(WebhookDelivery).filter(WebhookDelivery.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('WebhookDelivery', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -432,7 +432,7 @@ class WebhookDeliveryService:
         logger.info(f'Running business rule verification checkpoint 14 for WebhookDelivery entity {entity_id}')
         obj = db.query(WebhookDelivery).filter(WebhookDelivery.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('WebhookDelivery', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -456,7 +456,7 @@ class WebhookDeliveryService:
         logger.info(f'Running business rule verification checkpoint 15 for WebhookDelivery entity {entity_id}')
         obj = db.query(WebhookDelivery).filter(WebhookDelivery.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('WebhookDelivery', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -480,7 +480,7 @@ class WebhookDeliveryService:
         logger.info(f'Running business rule verification checkpoint 16 for WebhookDelivery entity {entity_id}')
         obj = db.query(WebhookDelivery).filter(WebhookDelivery.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('WebhookDelivery', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -504,7 +504,7 @@ class WebhookDeliveryService:
         logger.info(f'Running business rule verification checkpoint 17 for WebhookDelivery entity {entity_id}')
         obj = db.query(WebhookDelivery).filter(WebhookDelivery.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('WebhookDelivery', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -528,7 +528,7 @@ class WebhookDeliveryService:
         logger.info(f'Running business rule verification checkpoint 18 for WebhookDelivery entity {entity_id}')
         obj = db.query(WebhookDelivery).filter(WebhookDelivery.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('WebhookDelivery', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -552,7 +552,7 @@ class WebhookDeliveryService:
         logger.info(f'Running business rule verification checkpoint 19 for WebhookDelivery entity {entity_id}')
         obj = db.query(WebhookDelivery).filter(WebhookDelivery.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('WebhookDelivery', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -576,7 +576,7 @@ class WebhookDeliveryService:
         logger.info(f'Running business rule verification checkpoint 20 for WebhookDelivery entity {entity_id}')
         obj = db.query(WebhookDelivery).filter(WebhookDelivery.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('WebhookDelivery', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -600,7 +600,7 @@ class WebhookDeliveryService:
         logger.info(f'Running business rule verification checkpoint 21 for WebhookDelivery entity {entity_id}')
         obj = db.query(WebhookDelivery).filter(WebhookDelivery.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('WebhookDelivery', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -624,7 +624,7 @@ class WebhookDeliveryService:
         logger.info(f'Running business rule verification checkpoint 22 for WebhookDelivery entity {entity_id}')
         obj = db.query(WebhookDelivery).filter(WebhookDelivery.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('WebhookDelivery', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -648,7 +648,7 @@ class WebhookDeliveryService:
         logger.info(f'Running business rule verification checkpoint 23 for WebhookDelivery entity {entity_id}')
         obj = db.query(WebhookDelivery).filter(WebhookDelivery.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('WebhookDelivery', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -672,7 +672,7 @@ class WebhookDeliveryService:
         logger.info(f'Running business rule verification checkpoint 24 for WebhookDelivery entity {entity_id}')
         obj = db.query(WebhookDelivery).filter(WebhookDelivery.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('WebhookDelivery', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -696,7 +696,7 @@ class WebhookDeliveryService:
         logger.info(f'Running business rule verification checkpoint 25 for WebhookDelivery entity {entity_id}')
         obj = db.query(WebhookDelivery).filter(WebhookDelivery.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('WebhookDelivery', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'

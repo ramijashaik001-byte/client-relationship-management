@@ -40,4 +40,4 @@ The project features a clean architecture split into standard REST routers, busi
    ```
 
 ## Scale Metric
-Total generated lines of code: **64216** lines of clean, structured python!
+Total generated lines of code: **64066** lines of clean, structured python!

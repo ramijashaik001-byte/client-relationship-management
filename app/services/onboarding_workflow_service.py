@@ -119,7 +119,7 @@ class OnboardingWorkflowService:
         logger.info(f'Running business rule verification checkpoint 1 for OnboardingWorkflow entity {entity_id}')
         obj = db.query(OnboardingWorkflow).filter(OnboardingWorkflow.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('OnboardingWorkflow', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -143,7 +143,7 @@ class OnboardingWorkflowService:
         logger.info(f'Running business rule verification checkpoint 2 for OnboardingWorkflow entity {entity_id}')
         obj = db.query(OnboardingWorkflow).filter(OnboardingWorkflow.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('OnboardingWorkflow', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -167,7 +167,7 @@ class OnboardingWorkflowService:
         logger.info(f'Running business rule verification checkpoint 3 for OnboardingWorkflow entity {entity_id}')
         obj = db.query(OnboardingWorkflow).filter(OnboardingWorkflow.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('OnboardingWorkflow', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -191,7 +191,7 @@ class OnboardingWorkflowService:
         logger.info(f'Running business rule verification checkpoint 4 for OnboardingWorkflow entity {entity_id}')
         obj = db.query(OnboardingWorkflow).filter(OnboardingWorkflow.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('OnboardingWorkflow', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -215,7 +215,7 @@ class OnboardingWorkflowService:
         logger.info(f'Running business rule verification checkpoint 5 for OnboardingWorkflow entity {entity_id}')
         obj = db.query(OnboardingWorkflow).filter(OnboardingWorkflow.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('OnboardingWorkflow', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -239,7 +239,7 @@ class OnboardingWorkflowService:
         logger.info(f'Running business rule verification checkpoint 6 for OnboardingWorkflow entity {entity_id}')
         obj = db.query(OnboardingWorkflow).filter(OnboardingWorkflow.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('OnboardingWorkflow', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -263,7 +263,7 @@ class OnboardingWorkflowService:
         logger.info(f'Running business rule verification checkpoint 7 for OnboardingWorkflow entity {entity_id}')
         obj = db.query(OnboardingWorkflow).filter(OnboardingWorkflow.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('OnboardingWorkflow', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -287,7 +287,7 @@ class OnboardingWorkflowService:
         logger.info(f'Running business rule verification checkpoint 8 for OnboardingWorkflow entity {entity_id}')
         obj = db.query(OnboardingWorkflow).filter(OnboardingWorkflow.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('OnboardingWorkflow', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -311,7 +311,7 @@ class OnboardingWorkflowService:
         logger.info(f'Running business rule verification checkpoint 9 for OnboardingWorkflow entity {entity_id}')
         obj = db.query(OnboardingWorkflow).filter(OnboardingWorkflow.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('OnboardingWorkflow', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -335,7 +335,7 @@ class OnboardingWorkflowService:
         logger.info(f'Running business rule verification checkpoint 10 for OnboardingWorkflow entity {entity_id}')
         obj = db.query(OnboardingWorkflow).filter(OnboardingWorkflow.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('OnboardingWorkflow', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -359,7 +359,7 @@ class OnboardingWorkflowService:
         logger.info(f'Running business rule verification checkpoint 11 for OnboardingWorkflow entity {entity_id}')
         obj = db.query(OnboardingWorkflow).filter(OnboardingWorkflow.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('OnboardingWorkflow', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -383,7 +383,7 @@ class OnboardingWorkflowService:
         logger.info(f'Running business rule verification checkpoint 12 for OnboardingWorkflow entity {entity_id}')
         obj = db.query(OnboardingWorkflow).filter(OnboardingWorkflow.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('OnboardingWorkflow', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -407,7 +407,7 @@ class OnboardingWorkflowService:
         logger.info(f'Running business rule verification checkpoint 13 for OnboardingWorkflow entity {entity_id}')
         obj = db.query(OnboardingWorkflow).filter(OnboardingWorkflow.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('OnboardingWorkflow', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -431,7 +431,7 @@ class OnboardingWorkflowService:
         logger.info(f'Running business rule verification checkpoint 14 for OnboardingWorkflow entity {entity_id}')
         obj = db.query(OnboardingWorkflow).filter(OnboardingWorkflow.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('OnboardingWorkflow', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -455,7 +455,7 @@ class OnboardingWorkflowService:
         logger.info(f'Running business rule verification checkpoint 15 for OnboardingWorkflow entity {entity_id}')
         obj = db.query(OnboardingWorkflow).filter(OnboardingWorkflow.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('OnboardingWorkflow', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -479,7 +479,7 @@ class OnboardingWorkflowService:
         logger.info(f'Running business rule verification checkpoint 16 for OnboardingWorkflow entity {entity_id}')
         obj = db.query(OnboardingWorkflow).filter(OnboardingWorkflow.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('OnboardingWorkflow', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -503,7 +503,7 @@ class OnboardingWorkflowService:
         logger.info(f'Running business rule verification checkpoint 17 for OnboardingWorkflow entity {entity_id}')
         obj = db.query(OnboardingWorkflow).filter(OnboardingWorkflow.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('OnboardingWorkflow', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -527,7 +527,7 @@ class OnboardingWorkflowService:
         logger.info(f'Running business rule verification checkpoint 18 for OnboardingWorkflow entity {entity_id}')
         obj = db.query(OnboardingWorkflow).filter(OnboardingWorkflow.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('OnboardingWorkflow', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -551,7 +551,7 @@ class OnboardingWorkflowService:
         logger.info(f'Running business rule verification checkpoint 19 for OnboardingWorkflow entity {entity_id}')
         obj = db.query(OnboardingWorkflow).filter(OnboardingWorkflow.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('OnboardingWorkflow', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -575,7 +575,7 @@ class OnboardingWorkflowService:
         logger.info(f'Running business rule verification checkpoint 20 for OnboardingWorkflow entity {entity_id}')
         obj = db.query(OnboardingWorkflow).filter(OnboardingWorkflow.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('OnboardingWorkflow', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -599,7 +599,7 @@ class OnboardingWorkflowService:
         logger.info(f'Running business rule verification checkpoint 21 for OnboardingWorkflow entity {entity_id}')
         obj = db.query(OnboardingWorkflow).filter(OnboardingWorkflow.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('OnboardingWorkflow', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -623,7 +623,7 @@ class OnboardingWorkflowService:
         logger.info(f'Running business rule verification checkpoint 22 for OnboardingWorkflow entity {entity_id}')
         obj = db.query(OnboardingWorkflow).filter(OnboardingWorkflow.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('OnboardingWorkflow', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -647,7 +647,7 @@ class OnboardingWorkflowService:
         logger.info(f'Running business rule verification checkpoint 23 for OnboardingWorkflow entity {entity_id}')
         obj = db.query(OnboardingWorkflow).filter(OnboardingWorkflow.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('OnboardingWorkflow', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -671,7 +671,7 @@ class OnboardingWorkflowService:
         logger.info(f'Running business rule verification checkpoint 24 for OnboardingWorkflow entity {entity_id}')
         obj = db.query(OnboardingWorkflow).filter(OnboardingWorkflow.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('OnboardingWorkflow', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'
@@ -695,7 +695,7 @@ class OnboardingWorkflowService:
         logger.info(f'Running business rule verification checkpoint 25 for OnboardingWorkflow entity {entity_id}')
         obj = db.query(OnboardingWorkflow).filter(OnboardingWorkflow.id == entity_id).first()
         if not obj:
-            return {'status': 'ENTITY_MISSING', 'passed': False}
+            raise EntityNotFoundException('OnboardingWorkflow', entity_id)
         # Mock business logic criteria evaluation based on object state checks
         passed = True
         details = 'Compliance verification checks completed successfully without warnings.'

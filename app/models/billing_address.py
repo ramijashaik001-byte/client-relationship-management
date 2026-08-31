@@ -10,9 +10,6 @@ class BillingAddress(Base):
     Represents a specific element in the Client Onboarding CRM system.
     """
     __tablename__ = "billing_addresses"
-    __table_args__ = (
-        Index("ix_billing_addresses_id", "id"),
-    )
 
     id = Column(Integer, primary_key=True, index=True)
     billing_account_id = Column(Integer, ForeignKey('billing_accounts.id'), nullable=False)

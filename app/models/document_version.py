@@ -10,9 +10,6 @@ class DocumentVersion(Base):
     Represents a specific element in the Client Onboarding CRM system.
     """
     __tablename__ = "document_versions"
-    __table_args__ = (
-        Index("ix_document_versions_id", "id"),
-    )
 
     id = Column(Integer, primary_key=True, index=True)
     document_id = Column(Integer, ForeignKey('documents.id'), nullable=False)

@@ -10,9 +10,6 @@ class WebhookDelivery(Base):
     Represents a specific element in the Client Onboarding CRM system.
     """
     __tablename__ = "webhook_deliveries"
-    __table_args__ = (
-        Index("ix_webhook_deliveries_id", "id"),
-    )
 
     id = Column(Integer, primary_key=True, index=True)
     subscription_id = Column(Integer, ForeignKey('webhook_subscriptions.id'), nullable=False)

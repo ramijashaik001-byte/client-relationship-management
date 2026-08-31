@@ -10,9 +10,6 @@ class BeneficialOwner(Base):
     Represents a specific element in the Client Onboarding CRM system.
     """
     __tablename__ = "beneficial_owners"
-    __table_args__ = (
-        Index("ix_beneficial_owners_id", "id"),
-    )
 
     id = Column(Integer, primary_key=True, index=True)
     client_id = Column(Integer, ForeignKey('clients.id'), nullable=False)

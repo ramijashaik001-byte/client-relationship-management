@@ -10,9 +10,6 @@ class Client(Base):
     Represents a specific element in the Client Onboarding CRM system.
     """
     __tablename__ = "clients"
-    __table_args__ = (
-        Index("ix_clients_id", "id"),
-    )
 
     id = Column(Integer, primary_key=True, index=True)
     legal_name = Column(String(255), nullable=False)

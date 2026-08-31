@@ -10,9 +10,6 @@ class FormResponse(Base):
     Represents a specific element in the Client Onboarding CRM system.
     """
     __tablename__ = "form_responses"
-    __table_args__ = (
-        Index("ix_form_responses_id", "id"),
-    )
 
     id = Column(Integer, primary_key=True, index=True)
     client_id = Column(Integer, ForeignKey('clients.id'), nullable=False)

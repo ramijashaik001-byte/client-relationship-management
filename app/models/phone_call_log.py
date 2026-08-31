@@ -10,9 +10,6 @@ class PhoneCallLog(Base):
     Represents a specific element in the Client Onboarding CRM system.
     """
     __tablename__ = "phone_call_logs"
-    __table_args__ = (
-        Index("ix_phone_call_logs_id", "id"),
-    )
 
     id = Column(Integer, primary_key=True, index=True)
     client_id = Column(Integer, ForeignKey('clients.id'), nullable=False)

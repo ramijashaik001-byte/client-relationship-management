@@ -10,9 +10,6 @@ class APIKey(Base):
     Represents a specific element in the Client Onboarding CRM system.
     """
     __tablename__ = "api_keys"
-    __table_args__ = (
-        Index("ix_api_keys_id", "id"),
-    )
 
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String(100), nullable=False)

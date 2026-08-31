@@ -10,9 +10,6 @@ class InvoiceItem(Base):
     Represents a specific element in the Client Onboarding CRM system.
     """
     __tablename__ = "invoice_items"
-    __table_args__ = (
-        Index("ix_invoice_items_id", "id"),
-    )
 
     id = Column(Integer, primary_key=True, index=True)
     invoice_id = Column(Integer, ForeignKey('invoices.id'), nullable=False)

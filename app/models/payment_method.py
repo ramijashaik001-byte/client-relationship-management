@@ -10,9 +10,6 @@ class PaymentMethod(Base):
     Represents a specific element in the Client Onboarding CRM system.
     """
     __tablename__ = "payment_methods"
-    __table_args__ = (
-        Index("ix_payment_methods_id", "id"),
-    )
 
     id = Column(Integer, primary_key=True, index=True)
     billing_account_id = Column(Integer, ForeignKey('billing_accounts.id'), nullable=False)

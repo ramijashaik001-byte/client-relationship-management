@@ -10,9 +10,6 @@ class OnboardingSurvey(Base):
     Represents a specific element in the Client Onboarding CRM system.
     """
     __tablename__ = "onboarding_surveys"
-    __table_args__ = (
-        Index("ix_onboarding_surveys_id", "id"),
-    )
 
     id = Column(Integer, primary_key=True, index=True)
     survey_name = Column(String(255), nullable=False)

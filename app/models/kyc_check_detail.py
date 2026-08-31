@@ -10,9 +10,6 @@ class KYCCheckDetail(Base):
     Represents a specific element in the Client Onboarding CRM system.
     """
     __tablename__ = "kyc_check_details"
-    __table_args__ = (
-        Index("ix_kyc_check_details_id", "id"),
-    )
 
     id = Column(Integer, primary_key=True, index=True)
     kyc_id = Column(Integer, ForeignKey('kyc_verifications.id'), nullable=False)

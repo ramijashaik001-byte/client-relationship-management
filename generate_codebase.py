@@ -750,9 +750,6 @@ for index, meta in enumerate(entities_metadata):
     model_lines.append(f'    Represents a specific element in the Client Onboarding CRM system.')
     model_lines.append(f'    """')
     model_lines.append(f'    __tablename__ = "{plural}"')
-    model_lines.append(f'    __table_args__ = (')
-    model_lines.append(f'        Index("ix_{plural}_id", "id"),')
-    model_lines.append(f'    )')
     model_lines.append("")
     model_lines.append("    id = Column(Integer, primary_key=True, index=True)")
     
@@ -1009,7 +1006,7 @@ for index, meta in enumerate(entities_metadata):
         service_lines.append(f"        logger.info(f'Running business rule verification checkpoint {i} for {camel} entity {{entity_id}}')")
         service_lines.append(f"        obj = db.query({camel}).filter({camel}.id == entity_id).first()")
         service_lines.append("        if not obj:")
-        service_lines.append("            return {'status': 'ENTITY_MISSING', 'passed': False}")
+        service_lines.append(f"            raise EntityNotFoundException('{camel}', entity_id)")
         service_lines.append("        # Mock business logic criteria evaluation based on object state checks")
         service_lines.append("        passed = True")
         service_lines.append("        details = 'Compliance verification checks completed successfully without warnings.'")
@@ -1492,7 +1489,7 @@ from fastapi.testclient import TestClient
 from app.database import Base, get_db
 from app.main import app
 
-SQLALCHEMY_DATABASE_URL = "sqlite:///:memory:"
+SQLALCHEMY_DATABASE_URL = "sqlite:///./test.db"
 
 engine = create_engine(
     SQLALCHEMY_DATABASE_URL, connect_args={"check_same_thread": False}

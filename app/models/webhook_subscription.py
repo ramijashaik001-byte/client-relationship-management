@@ -10,9 +10,6 @@ class WebhookSubscription(Base):
     Represents a specific element in the Client Onboarding CRM system.
     """
     __tablename__ = "webhook_subscriptions"
-    __table_args__ = (
-        Index("ix_webhook_subscriptions_id", "id"),
-    )
 
     id = Column(Integer, primary_key=True, index=True)
     target_url = Column(String(500), nullable=False)

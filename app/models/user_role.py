@@ -10,9 +10,6 @@ class UserRole(Base):
     Represents a specific element in the Client Onboarding CRM system.
     """
     __tablename__ = "user_roles"
-    __table_args__ = (
-        Index("ix_user_roles_id", "id"),
-    )
 
     id = Column(Integer, primary_key=True, index=True)
     user_id = Column(Integer, nullable=False)

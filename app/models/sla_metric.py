@@ -10,9 +10,6 @@ class SLAMetric(Base):
     Represents a specific element in the Client Onboarding CRM system.
     """
     __tablename__ = "sla_metrics"
-    __table_args__ = (
-        Index("ix_sla_metrics_id", "id"),
-    )
 
     id = Column(Integer, primary_key=True, index=True)
     entity_name = Column(String(100), nullable=False)

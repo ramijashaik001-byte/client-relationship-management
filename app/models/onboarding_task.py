@@ -10,9 +10,6 @@ class OnboardingTask(Base):
     Represents a specific element in the Client Onboarding CRM system.
     """
     __tablename__ = "onboarding_tasks"
-    __table_args__ = (
-        Index("ix_onboarding_tasks_id", "id"),
-    )
 
     id = Column(Integer, primary_key=True, index=True)
     workflow_id = Column(Integer, ForeignKey('onboarding_workflows.id'), nullable=False)

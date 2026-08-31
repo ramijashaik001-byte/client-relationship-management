@@ -10,9 +10,6 @@ class ComplianceLog(Base):
     Represents a specific element in the Client Onboarding CRM system.
     """
     __tablename__ = "compliance_logs"
-    __table_args__ = (
-        Index("ix_compliance_logs_id", "id"),
-    )
 
     id = Column(Integer, primary_key=True, index=True)
     client_id = Column(Integer, ForeignKey('clients.id'), nullable=False)

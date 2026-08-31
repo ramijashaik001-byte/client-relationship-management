@@ -10,9 +10,6 @@ class FormTemplate(Base):
     Represents a specific element in the Client Onboarding CRM system.
     """
     __tablename__ = "form_templates"
-    __table_args__ = (
-        Index("ix_form_templates_id", "id"),
-    )
 
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String(255), nullable=False)

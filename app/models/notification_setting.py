@@ -10,9 +10,6 @@ class NotificationSetting(Base):
     Represents a specific element in the Client Onboarding CRM system.
     """
     __tablename__ = "notification_settings"
-    __table_args__ = (
-        Index("ix_notification_settings_id", "id"),
-    )
 
     id = Column(Integer, primary_key=True, index=True)
     client_id = Column(Integer, ForeignKey('clients.id'), nullable=False)
