@@ -18,3 +18,5 @@ class NotificationDispatcher:
         logger.info(f"Dispatching SMS warning payload to: {phone_number}")
         # SMS service execution logic goes here
         return True
+
+# Notification channel dispatch logs
