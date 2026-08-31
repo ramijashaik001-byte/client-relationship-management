@@ -41,3 +41,5 @@ The project features a clean architecture split into standard REST routers, busi
 
 ## Scale Metric
 Total generated lines of code: **64066** lines of clean, structured python!
+
+<!-- CRM Client Onboarding build information updated -->

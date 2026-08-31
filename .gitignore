@@ -6,3 +6,5 @@ __pycache__/
 *.db
 storage/
 .env
+
+# Git ignore patterns for local databases

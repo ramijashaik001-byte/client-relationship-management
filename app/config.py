@@ -20,3 +20,5 @@ class Settings(BaseSettings):
         case_sensitive = True
 
 settings = Settings()
+
+# API Version 1.0.1 updates

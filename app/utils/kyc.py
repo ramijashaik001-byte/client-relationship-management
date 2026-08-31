@@ -44,3 +44,5 @@ class KYCProvider:
             "sanctions_check": "CLEARED",
             "risk_score": 15
         }
+
+# KYC remote verification retry protocol placeholder
