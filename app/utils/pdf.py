@@ -29,3 +29,8 @@ class OnboardingPDFGenerator:
         return file_path
 
 # PDF dossier rendering properties
+
+    @staticmethod
+    def get_default_pdf_theme() -> str:
+        """Returns the branding theme style sheet name."""
+        return "CRM_ENTERPRISE_LIGHT"
