@@ -31,3 +31,5 @@ class KYCProvider:
             "matches_found": False,
             "screening_details": "No political exposure or watchlists match detected."
         }
+
+# KYC remote verification retry protocol placeholder
