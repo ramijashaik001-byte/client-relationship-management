@@ -20,3 +20,8 @@ class NotificationDispatcher:
         return True
 
 # Notification channel dispatch logs
+
+    @staticmethod
+    def render_sms_template(template_name: str, parameters: dict) -> str:
+        """Renders standard SMS template string."""
+        return f"Notification: {template_name} - params: {str(parameters)}"
