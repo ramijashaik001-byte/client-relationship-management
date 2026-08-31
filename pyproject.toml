@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "client-relationship-management"
+version = "1.0.0"
+description = "CRM Client Onboarding system"
+authors = ["ramijashaik001-byte <ramijashaik001@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "0.95.1"
+uvicorn = "0.22.0"
+sqlalchemy = "1.4.47"
+pydantic = "1.10.7"
+python-jose = {extras = ["cryptography"], version = "3.3.0"}
+passlib = {extras = ["bcrypt"], version = "1.7.4"}
+requests = "2.28.2"
+httpx = "0.24.0"
+pytest = "7.3.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
