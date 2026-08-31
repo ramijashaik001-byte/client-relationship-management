@@ -25,3 +25,5 @@ class AuthenticationException(CRMException):
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail=detail
         )
+
+# Custom CRM status code wrapper explanation
